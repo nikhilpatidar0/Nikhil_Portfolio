@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contacts</title>
+
+    <!-- <script>
+		const child = document.getElementsByClassName("fab fa-facebook");
+ child.onmouseover=function(){
+     
+     this.getElementsByClassName('name').style="-webkit-text-stroke: 0.3vw #4267B2"
+
+ }
+	</script> -->
+
+    <style type="text/css">
+        h1 {
+            -webkit-text-stroke: 0.3vw #383d52;
+        }
+        
+        .name {
+            font-size: 8em;
+            text-align: center;
+            font-family: 'Bauhaus 93';
+            color: #ddd;
+        }
+        
+        ul {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        ul li a {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            display: block;
+            text-align: center;
+            margin: 0 10px;
+            border-radius: 50%;
+            padding: 6px;
+            box-sizing: border-box;
+            text-decoration: none;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(0deg, #ddd, #fff);
+            transition: .5s;
+        }
+        
+        ul li a:hover {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+        }
+        
+        ul li a .fab {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, #fff, #ddd);
+            border-radius: 50%;
+            line-height: calc(60px - 12px);
+            font-size: 35px;
+            color: #292828;
+            transition: .5s;
+        }
+        
+        ul li a .fab.fa-facebook-f:hover {
+            color: #4267B2;
+            box-shadow: 0 0 10px #4267B2, 0 0 20px #4267B2, 0 0 40px #4267B2, 0 0 80px #4267B2, 0 0 120px #4267B2;
+        }
+        /* ul li a .fab.fa-facebook-f:hover{ 
+			h1{
+			-webkit-text-stroke: 0.3vw #4267B2;
+			}
+		} */
+        
+        ul li a .fab.fa-twitter:hover {
+            color: #00acee;
+            box-shadow: 0 0 10px #00acee, 0 0 20px #00acee, 0 0 40px #00acee, 0 0 80px #00acee;
+        }
+        
+        ul li a .fab.fa-google:hover {
+            color: #ee210a;
+            box-shadow: 0 0 10px #ee210a, 0 0 20px #ee210a, 0 0 40px #ee210a, 0 0 80px #ee210a, 0 0 120px #ee210a, 0 0 180px #ee210a, 0 0 220px #ee210a;
+        }
+        
+        ul li a .fab.fa-linkedin:hover {
+            color: #0e76a8;
+            box-shadow: 0 0 10px #0e76a8, 0 0 20px #0e76a8, 0 0 40px #0e76a8, 0 0 80px #0e76a8, 0 0 120px #0e76a8, 0 0 160px #0e76a8, 0 0 200px #0e76a8;
+        }
+        
+        ul li a .fab.fa-instagram:hover {
+            color: #bc2a8d;
+            box-shadow: 0 0 10px #bc2a8d, 0 0 20px #bc2a8d, 0 0 40px #bc2a8d, 0 0 80px #bc2a8d, 0 0 140px #bc2a8d, 0 0 180px #bc2a8d;
+        }
+        
+        ul li a .fab.fa-whatsapp:hover {
+            color: #4fce5d;
+            box-shadow: 0 0 10px #4fce5d, 0 0 20px #4fce5d, 0 0 40px #4fce5d, 0 0 80px #4fce5d;
+        }
+        
+        ul li a .fab.fa-youtube:hover {
+            color: #ff2119;
+            box-shadow: 0 0 10px #ff2119, 0 0 20px #ff2119, 0 0 40px #ff2119, 0 0 80px #ff2119, 0 0 120px #ff2119;
+        }
+        
+        ul li a .fab.fa-telegram-plane:hover {
+            color: #0088cc;
+            box-shadow: 0 0 10px #0088cc, 0 0 20px #0088cc, 0 0 40px #0088cc, 0 0 80px #0088cc, 0 0 120px #0088cc, 0 0 160px #0088cc, 0 0 200px #0088cc;
+        }
+        
+        ul li a .fab.fa-github:hover {
+            color: #6e5494;
+            box-shadow: 0 0 10px #6e5494, 0 0 20px #6e5494, 0 0 40px #6e5494, 0 0 80px #6e5494, 0 0 120px #6e5494, 0 0 160px #6e5494;
+        }
+        /* effect-shine */
+        
+        .name {
+            -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+            -webkit-mask-size: 200%;
+            animation: shine 2s infinite;
+        }
+        
+        @keyframes shine {
+            from {
+                -webkit-mask-position: 150%;
+            }
+            to {
+                -webkit-mask-position: -50%;
+            }
+        }
+    </style>
+</head>
+
+<body background="images/plain_black.jpeg">
+    <h1 class="name">Profile Hub</h1>
+
+    <ul>
+        <li><a href="https://www.facebook.com/nikhil.patidar.1800"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/nikrocksit007"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.instagram.com/nikhilpatidar2020/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/0103CS181091"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="mailto:nikhilpatidar0@gmail.com"><i class="fab fa-google" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/nikhil-patidar-ba2939182/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.youtube.com/"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+        <li><a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+        <li><a href="https://web.telegram.org/"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a></li>
+    </ul>
+    <link href="your-path-to-fontawesome/css/all.css" rel="stylesheet">
+</body>
+
+</html>
