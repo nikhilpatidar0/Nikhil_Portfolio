@@ -20,13 +20,13 @@ if(isset($_POST['submit'])){
         $mail->isSMTP();
         $mail->Host='smtp.gmail.com';
         $mail->SMTPAuth=true;
-        $mail->Username='yourservermail@mail';
-        $mail->Password='password';
+        $mail->Username='nikhilpatidar0@mail';
+        $mail->Password='8989494677';
         $mail->SMTPSecure=PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port='587';
 
-        $mail->setFrom('yourservermail@mail');
-        $mail->addAddress('yourrecevermail@mail');
+        $mail->setFrom('nikhilpatidar0@mail');
+        $mail->addAddress('patidarnikhil123@mail');
          
         $mail->isHTML(true);
         $mail->Subject=$subject;
