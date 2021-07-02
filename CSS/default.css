@@ -15,10 +15,11 @@ html,
 body {
     padding: 0;
     margin: 0;
+    scroll-behavior:smooth;
 }
 
 body * {
-    transition: 0.4s;
+    transition: 0.6s;
 }
 
 h1,
@@ -50,6 +51,30 @@ a {
 
 ul {
     list-style: none;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
 }
 
 .s1 {
@@ -242,6 +267,9 @@ ul {
     border-bottom-right-radius: 37px 120px;
 }
 
+#preview h3{
+    font-size:22px;
+}
 #corner-tl {
     /*it is top right dot of shadow*/
     width: 7px;
@@ -529,8 +557,33 @@ textarea::placeholder {
         justify-content: center;
     }
 }
+
 @media screen and (max-width:560px){
-    .nav-wrapper{
-        max-width:100%;
+    #preview-shadow {
+        max-width: 280px;
+        height: 180px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    #preview {
+        width: 280px;
+    }
+    #preview p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #preview-shadow {
+        max-width: 280px;
+        height: 180px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    #preview {
+        width: 280px;
+    }
+    #preview p {
+        font-size: 15px;
     }
 }
