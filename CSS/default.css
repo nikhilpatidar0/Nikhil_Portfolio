@@ -138,7 +138,7 @@ h6 {
     margin-right: 5px;
     margin-left: 5px;
 }
-#navigation a{
+#navigation a:hover{
     color:#17a2b8;
 }
 
