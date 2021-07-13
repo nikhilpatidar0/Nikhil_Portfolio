@@ -138,6 +138,9 @@ h6 {
     margin-right: 5px;
     margin-left: 5px;
 }
+#navigation a{
+    color:#17a2b8;
+}
 
 .dots-wrapper {
     display: flex;
