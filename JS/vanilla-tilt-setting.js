@@ -1,5 +1,5 @@
 VanillaTilt.init(document.querySelectorAll(".post"), {
-    max: 15,
+    max: 3,
     speed: 10,
     glare: true,
     "max-glare": 0.3
