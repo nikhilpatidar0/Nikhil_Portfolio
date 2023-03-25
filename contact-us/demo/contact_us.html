@@ -7,14 +7,69 @@
     <meta charset="utf-8">
     <link rel="stylesheet" media="screen" href="css/style.css">
     <style type="text/css">
+        /* For  navigation bar */
 
+        .nav-wrapper {
+            grid-area: nav-wrapper;
+            border: 1px solid rgba(193, 193, 193, 0.4);
+            display: flex;
+            margin-top: 0.1rem;
+            margin-right: 0.1rem;
+            border-radius: 2px 2px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .dots-wrapper {
+            display: flex;
+            padding: 10px;
+        }
+
+        #dot-1 {
+            background-color: #fc6058;
+        }
+
+        #dot-2 {
+            background-color: #fec02f;
+        }
+
+        #dot-3 {
+            background-color: #2aca3e;
+        }
+
+        .browser-dots {
+            background-color: black;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            margin: 5px;
+            -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+            box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+        }
+
+        #navHome {
+            color: #ffff;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
+            padding: 0.4rem;
+            font-variant: small-caps;
+            border-radius: 5px;
+            margin-right: 2rem;
+        }
+        #navHome:hover{
+            background-color: rgba(193, 193, 193, 0.15);
+        }
+
+        /* for links */
         ul {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             margin: 0;
-            padding: 0;
+            padding-top: 7rem;
             display: flex;
         }
 
@@ -53,7 +108,7 @@
             color: #292828;
             transition: .5s;
         }
-        
+
         ul li a .fab.fa-facebook-f:hover {
             color: #4267B2;
             box-shadow: 0 0 10px #4267B2, 0 0 20px #4267B2, 0 0 40px #4267B2, 0 0 80px #4267B2, 0 0 100px #4267B2, 0 0 120px #4267B2, 0 0 140px #4267B2, 0 0 160px #4267B2, 0 0 180px #4267B2, 0 0 200px #4267B2;
@@ -83,7 +138,7 @@
             color: #0e76a8;
             box-shadow: 0 0 10px #0e76a8, 0 0 20px #0e76a8, 0 0 40px #0e76a8, 0 0 80px #0e76a8, 0 0 100px #0e76a8, 0 0 120px #0e76a8, 0 0 140px #0e76a8, 0 0 160px #0e76a8, 0 0 180px #0e76a8, 0 0 200px #0e76a8;
         }
-        
+
         ul li a .fab.fa-youtube:hover {
             color: #ff2119;
             box-shadow: 0 0 10px #ff2119, 0 0 20px #ff2119, 0 0 40px #ff2119, 0 0 80px #ff2119, 0 0 100px #ff2119, 0 0 120px #ff2119, 0 0 140px #ff2119, 0 0 160px #ff2119;
@@ -100,12 +155,13 @@
         }
 
 
-        /* effect-shine on heading */
+        /* for heading */
 
         .name {
-            font-size: 12em;
+            font-size: 14em;
             text-align: center;
             font-family: monospace;
+            font-variant: small-caps;
             color: #ffffff;
             -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .7) 30%, #000 50%, rgba(0, 0, 0, .7) 70%);
             -webkit-mask-size: 200%;
@@ -132,6 +188,20 @@
     <!-- scripts -->
     <script src="../particles.js"></script>
     <script src="js/app.js"></script>
+    <div class="nav-wrapper">
+        <div class="dots-wrapper">
+            <a href="../../index.html">
+                <div class="browser-dots dots" id="dot-1"></div>
+            </a>
+            <a href="../../index.html">
+                <div class="browser-dots dots" id="dot-2"></div>
+            </a>
+            <a href="../../index.html">
+                <div class="browser-dots dots" id="dot-3"></div>
+            </a>
+        </div>
+        <a id="navHome" href="../../index.html">Home</a>
+    </div>
     <h1 class="name">Profile Hub</h1>
 
     <ul>
