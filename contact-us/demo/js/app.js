@@ -19,7 +19,7 @@ particlesJS('particles-js',
       "value": 235,
       "density": {
         "enable": true,
-        "value_area": 700
+        "value_area": 550
       }
     },
     "color": {
@@ -90,7 +90,7 @@ particlesJS('particles-js',
         "mode": "grab"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
