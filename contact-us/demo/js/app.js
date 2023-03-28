@@ -11,9 +11,8 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-particlesJS('particles-js',
-  
-{
+particlesJS(
+  {
   "particles": {
     "number": {
       "value": 235,
@@ -77,7 +76,7 @@ particlesJS('particles-js',
       "bounce": false,
       "attract": {
         "enable": false,
-        "rotateX": 1120,
+        "rotateX": 1200,
         "rotateY": 1200
       }
     }
@@ -90,7 +89,7 @@ particlesJS('particles-js',
         "mode": "grab"
       },
       "onclick": {
-        "enable": false,
+        "enable": true,
         "mode": "push"
       },
       "resize": true
@@ -114,7 +113,7 @@ particlesJS('particles-js',
         "duration": 0.4
       },
       "push": {
-        "particles_nb": 4
+        "particles_nb": 3
       },
       "remove": {
         "particles_nb": 2
@@ -123,5 +122,4 @@ particlesJS('particles-js',
   },
   "retina_detect": true
 }
-
 );
