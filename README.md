@@ -8,4 +8,4 @@ Well it was all part of a practical version of what I had learned in HTML CSS JS
 
 👇👇link for live project👇👇
 
-https://0103cs181091.github.io/Nikhil_Portfolio/index.html
+https://nikhilpatidar0.github.io/Nikhil_Portfolio/index.html
